@@ -1,0 +1,70 @@
+<?xml version="1.0" encoding="utf-8"?>
+<GridLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:rowCount="2"
+    android:columnCount="2"
+    android:orientation="horizontal"
+    android:layout_alignParentRight="true"
+    tools:context="com.example.vazquez.chatonline.TableActivity">
+
+
+    <TableRow>
+        <ImageView android:id="@+id/img_one"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_weight="0"
+            android:src="@drawable/one"
+            android:onClick="nextActivityChat"/>
+    </TableRow>
+
+    <TableRow>
+        <ImageView android:id="@+id/img_two"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:src="@drawable/ic_cd_two"
+            android:onClick="nextActivityCompa"
+            />
+    </TableRow>
+    <TableRow>
+        <ImageView android:id="@+id/img_tree"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_weight="0"
+            android:src="@drawable/ic_cd_ige"
+           />
+    </TableRow>
+    <TableRow>
+
+        <ImageView
+            android:id="@+id/img_four"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_weight="0"
+
+            android:src="@drawable/ic_cd_one"
+
+            />
+    </TableRow>
+    <TableRow>
+        <ImageView android:id="@+id/img_five"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_weight="0"
+            android:src="@drawable/ic_cd_five"
+
+            />
+
+    </TableRow>
+    <TableRow>
+        <ImageView android:id="@+id/img_six"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_weight="0"
+            android:src="@drawable/ic_cd_four"
+        />
+    </TableRow>
+</GridLayout>

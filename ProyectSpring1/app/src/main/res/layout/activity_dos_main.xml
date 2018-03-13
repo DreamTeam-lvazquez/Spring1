@@ -1,0 +1,114 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+   android:background="@drawable/fondo"
+    tools:context="com.example.vazquez.chatonline.MainTwoActivity">
+
+    <com.hsalf.smilerating.SmileRating
+        android:id="@+id/smile_rating"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentStart="true"
+        android:layout_below="@+id/textView2"
+        android:layout_marginTop="49dp" />
+
+    <Button
+        android:id="@+id/btn_whats"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+
+        android:layout_alignBaseline="@+id/btn_twitter"
+        android:layout_alignBottom="@+id/btn_twitter"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentStart="true"
+        android:background="@drawable/whats"
+        android:textColor="#fdfdfd"
+        tools:layout_editor_absoluteX="125dp"
+        tools:layout_editor_absoluteY="156dp" />
+
+    <Button
+        android:id="@+id/btn_share"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignBottom="@+id/btn_face"
+        android:layout_alignParentEnd="true"
+        android:layout_alignParentRight="true"
+        android:background="@drawable/ic_cd_six"
+        tools:layout_editor_absoluteX="125dp"
+        tools:layout_editor_absoluteY="78dp" />
+
+    <Button
+        android:id="@+id/btn_twitter"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignBaseline="@+id/btn_face"
+        android:layout_alignBottom="@+id/btn_face"
+        android:layout_toEndOf="@+id/btn_whats"
+        android:layout_toRightOf="@+id/btn_whats"
+        android:background="@drawable/twitter"
+        android:textColor="#fdfdfd"
+        tools:layout_editor_absoluteX="268dp"
+        tools:layout_editor_absoluteY="156dp" />
+
+
+    <TextView
+        android:id="@+id/textView"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentStart="true"
+        android:layout_below="@+id/smile_rating"
+        android:layout_marginTop="21dp"
+        android:background="#c2da82"
+        android:text="@string/comment_one"
+        android:textAlignment="center"
+        android:textColor="#e66f07"
+        android:textSize="7pt"
+        android:textStyle="italic" />
+
+    <TextView
+        android:id="@+id/textView2"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentStart="true"
+
+        android:layout_alignParentTop="true"
+        android:layout_marginTop="16dp"
+        android:textAlignment="center"
+        android:text="@string/comment"
+        android:textColor="#770000"
+        android:textSize="9pt"
+        android:textStyle="bold" />
+
+
+    <EditText
+        android:id="@+id/editText2"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_above="@+id/btn_whats"
+        android:layout_below="@+id/textView"
+        android:layout_toLeftOf="@+id/btn_share"
+        android:layout_toStartOf="@+id/btn_share"
+        android:background="#FFFFFF"
+        android:ems="10"
+        android:inputType="textPersonName" />
+
+    <Button
+        android:id="@+id/btn_face"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+
+        android:layout_alignParentBottom="true"
+        android:layout_marginBottom="34dp"
+        android:layout_toEndOf="@+id/btn_twitter"
+        android:layout_toRightOf="@+id/btn_twitter"
+        android:background="@drawable/facebook"
+        android:textColor="#fdfdfd"
+        tools:layout_editor_absoluteX="0dp"
+        tools:layout_editor_absoluteY="156dp" />
+</RelativeLayout>
